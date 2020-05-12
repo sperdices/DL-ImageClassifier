@@ -328,5 +328,5 @@ optional arguments:
 ## Predict and convert categories to names using a json dictionary:
 	python predict.py "~/.torch/datasets/flowers\test\1\image_06743.jpg" "models\ckp_Flowers_vgg13_512_256_0.0001_20_best.pth"  --gpu --category_names "~/.torch/datasets/flowers/cat_to_name.json"
 ```
-<img src="images/predict.png" width="500" style="display:block; margin: auto">
+<img src="imgs/predict.png" width="500" style="display:block; margin: auto">
 

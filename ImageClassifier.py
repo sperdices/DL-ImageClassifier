@@ -11,7 +11,7 @@ import torch.nn.functional as F
 from torchvision import datasets, transforms, models
 from PIL import Image
 
-# TODO: something wrong with the epoch print in the last epoch
+# TODO: Fix bug with the epoch print in the last batch of the epochs
 # TODO: Change steps to number of images
 # TODO: Extract dataset name from path
 
@@ -22,7 +22,7 @@ class ImageClassifier:
         # Device to bring back to cpu
         self.device_cpu = torch.device("cpu")
         
-        # data_directory expects: /train /valid /train
+        # data_directory expects: /train /valid /test
         self.data_directory = None
         # dataset folder name
         self.dataset = 'Flowers'
